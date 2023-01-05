@@ -9,6 +9,7 @@ import Cart from './components/Cart'
 import NotFound from './components/NotFound'
 import ProtectedRoute from './components/ProtectedRoute'
 import CartContext from './context/CartContext'
+import CreateAnAccount from './components/CreateAnAccount'
 
 import './App.css'
 
@@ -100,6 +101,7 @@ class App extends Component {
         }}
       >
         <Switch>
+          <Route exact path="/create-account" component={CreateAnAccount} />
           <Route exact path="/login" component={LoginForm} />
           <ProtectedRoute exact path="/" component={Home} />
           <ProtectedRoute exact path="/products" component={Products} />

@@ -1,6 +1,6 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
-import {Redirect} from 'react-router-dom'
+import {Redirect, Link} from 'react-router-dom'
 
 import './index.css'
 
@@ -19,6 +19,8 @@ class LoginForm extends Component {
   onChangePassword = event => {
     this.setState({password: event.target.value})
   }
+
+  onCreateAccount = () => <Redirect to="/create-account" />
 
   onSubmitSuccess = jwtToken => {
     const {history} = this.props
@@ -122,6 +124,17 @@ class LoginForm extends Component {
           <button type="submit" className="login-button">
             Login
           </button>
+          <div className="btn-card">
+            <Link to="/create-account" className="nav-link">
+              <button
+                type="button"
+                className="new-user"
+                onClick={this.onCreateAccount}
+              >
+                Are You a <span className="span-ele">new user?</span>
+              </button>
+            </Link>
+          </div>
           {showSubmitError && <p className="error-message">*{errorMsg}</p>}
         </form>
       </div>

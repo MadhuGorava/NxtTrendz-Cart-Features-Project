@@ -86,19 +86,7 @@
   color: #475569;
 }
 
-.username-input-field {
-  font-size: 14px;
-  height: 40px;
-  border: 1px solid #d7dfe9;
-  background-color: #e2e8f0;
-  color: #64748b;
-  border-radius: 2px;
-  margin-top: 5px;
-  padding: 8px 16px 8px 16px;
-  outline: none;
-}
-
-.password-input-field {
+.input-field {
   font-size: 14px;
   height: 40px;
   border: 1px solid #d7dfe9;
@@ -135,31 +123,4 @@
   font-size: 12px;
   line-height: 16px;
   color: #ff0b37;
-}
-.btn-card {
-  display: flex;
-  margin-top: 10px;
-}
-.new-user {
-  color: #252525;
-  font-size: 15px;
-  font-family: 'San serif';
-  font-weight: 600;
-  background-color: transparent;
-  border-width: 0px;
-}
-.span-ele {
-  color: blue;
-  font-size: 15px;
-  font-family: 'San serif';
-  font-weight: 600;
-  cursor: pointer;
-  outline: none;
-  text-decoration: underline;
-}
-.nav-link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #475569;
 }
